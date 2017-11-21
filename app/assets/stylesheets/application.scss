@@ -13,14 +13,15 @@
  */
   @import "bootstrap";
 
+body {
+  padding-top: 60px;
+}
+
 .bg-company-red {
   background-color: #1BB7DB;
   color: #ffffff;
 }
 
-.navbar {
-  margin-bottom: 0px;
-}
 nav li {
   display: inline;
   padding-right: 50px;
@@ -29,6 +30,7 @@ nav li {
 
 .navbar ul li a {
   color:#fff;}
+
 .navbar ul li a:hover {
   color:#000;}
 
@@ -57,4 +59,25 @@ nav li {
   margin-top: 50px;
   font-size: 1.5em;
   font-weight: lighter;
+}
+
+
+.services {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.serve {
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
 }
