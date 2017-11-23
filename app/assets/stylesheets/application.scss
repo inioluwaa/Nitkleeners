@@ -11,25 +11,37 @@
  * It is generally better to create a new file per style scope.
  *
  */
-  @import "bootstrap";
+@import "bootstrap";
+@import "static_pages";
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
 
-body {
-  padding-top: 60px;
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar {
+  background: transparent;
 }
 
 .bg-company-red {
-  background-color: #1BB7DB;
-  color: #ffffff;
+  position: absolute;
+ }
+
+
+
+.btn-group.btn-square {
+  border-radius: 0;
 }
 
 nav li {
   display: inline;
   padding-right: 50px;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 .navbar ul li a {
-  color:#fff;}
+  color:white;}
 
 .navbar ul li a:hover {
   color:#000;}
@@ -38,7 +50,8 @@ nav li {
   width: 100%;
   height: 300px;
   display: block;
-  background: url('C.png');
+  background-size: cover;
+  background-image: url('dry-cleaning-suits-slide.png');
 }
 
 .jumbotext {
@@ -52,14 +65,16 @@ nav li {
 }
 
 .over{
-  margin-top: 50px;
+  margin-top: 70px;
+  font-weight: 600;
 }
 
 .just {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 1.5em;
   font-weight: lighter;
 }
+
 
 
 .services {
@@ -80,4 +95,202 @@ nav li {
   max-height: 100%;
   width: 100%;
   height: 100%;
+}
+
+.well {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.bustext {
+  padding-left: 50px;
+}
+
+.bluecont {
+  padding: 50px;
+  background-color: #1BB7DB;
+}
+
+.bluecont1 {
+  padding: 20px;
+  background-color: #1BB7DB;
+}
+
+hr{
+  border: 0.5px solid #000000;
+}
+
+
+/* learn more button*/
+
+.lbtn {
+  color: black;
+  background-color: #FFFFFF;
+  border-color: #1BB7DB;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.lbtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.lbtn:hover, .lbtn:focus, .lbtn:active {
+  color: white;
+  background-color: #1BB7DB;
+  border-color: white;
+}
+.lbtn:hover:before, .lbtn:before, .lbtn:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.sbtn {
+  color: white;
+  background: transparent;
+  border-color: #FFFFFF;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.sbtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.sbtn:hover, .sbtn:focus, .sbtn:active {
+  color: black;
+  background-color: white;
+  border-color: #1BB7DB;
+}
+.sbtn:hover:before, .sbtn:before, .sbtn:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.cbtn {
+  color: black;
+  background-color: #1BB7DB;
+  border-color: white;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.cbtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.cbtn:hover, .cbtn:focus, .cbtn:active {
+  color: white;
+  background-color: #1BB7DB;
+  border-color: black;
+}
+.cbtn:hover:before, .cbtn:before, .cbtn:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+footer {
+  text-align: center;
+  font-weight: 300;
+  padding: 20px;
+  background-color: #333333;
+}
+
+footer p {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #FFFFFF;
+}
+
+.footerlink:hover{
+  color: #C1c1c1;
+}
+/* add code for dropdown */
+
+.dropdown .dropdown-menu a{color: #000;}
+.dropdown .dropdown-menu a:hover{color: #C1C1C1;}
+
+a.footerlink:not(:first-child) {
+  border-left: 1px solid black;
+}
+
+.footerlink {
+  padding:0 5px;
+  float: left;
 }
