@@ -1,3 +1,48 @@
 <% provide(:title, 'Services') %>
-<h1>StaticPages#services</h1>
-<p>Find me in app/views/static_pages/services.html.erb</p>
+<%= render 'layouts/header' %>
+<div class="row">
+  <div class="col-12 col-sm-12">
+    <div class="jumbotron jumboimage1">
+      <div class="jumbotext">
+        <h3 class="over">Delivering world class services to our wonderful clients</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container services">
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <img src="/assets/DryCleaning.png" class="img-fluid img-thumbnail serve" alt="Drycleaning">
+      <div class="centered"><h3>Drycleaning</h3></div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <img src="/assets/mrbubbleswashers.png" class="img-fluid img-thumbnail serve" alt="Drycleaning">
+      <div class="centered"><h3>Laundry</h3></div>
+    </div>
+  </div>
+  <p style="padding-bottom: 10px;"></p>
+  <div class="row">
+    <div class="col-12 col-sm-6">
+      <img src="/assets/3ae.png" class="img-fluid img-thumbnail serve" alt="Drycleaning">
+      <div class="centered"><h3>Janitorial Services</h3></div>
+    </div>
+    <div class="col-12 col-sm-6">
+      <img src="/assets/Iss.png" class="img-fluid img-thumbnail serve" alt="Drycleaning">
+      <div class="centered"><h3>Facility Management</h3></div>
+    </div>
+  </div>
+</div>
+<p style="padding: 20px;"></p>
+<%= render 'layouts/bluebus' %>
+<p style="padding:1px;"></p>
+<div class="bluecont1">
+  <div class="container" style="display: flex;
+      align-items: center;
+      justify-content: center;">
+    <div class="well">
+      <h3>Get in touch with us today!</h3><p style="padding:20px;"></p>
+      <a href="#"><button type="button" class="btn btn-lg cbtn">Contact us</button></a>
+    </div>
+  </div>
+</div>
