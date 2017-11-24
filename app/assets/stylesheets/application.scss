@@ -28,6 +28,11 @@
   position: absolute;
  }
 
+.bg-company-blue {
+  background-color: #083944;
+  position: absolute;
+}
+
 
 
 .btn-group.btn-square {
@@ -93,7 +98,7 @@ nav li {
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -299,7 +304,12 @@ a.footerlink:not(:first-child) {
 
 .footerlink {
   padding:0 5px;
+}
+
+.contus {
   float: left;
+  margin-top: 50px;
+  text-decoration: none;
 }
 
 .borderg{
@@ -316,3 +326,10 @@ a.footerlink:not(:first-child) {
   float: left;
 }
 
+.navbar-toggler {
+  background-color: #083944;
+}
+
+.contactbody {
+  padding-top: 70px;
+}

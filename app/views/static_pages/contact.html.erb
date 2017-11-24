@@ -1,3 +1,61 @@
 <% provide(:title, 'Contact') %>
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<div class="contactbody">
+  <nav class="navbar fixed-top navbar-inverse navbar-expand-lg bg-company-blue">
+    <a class="navbar-brand" href="#">
+      <%= link_to image_tag('/assets/G.png', height: '50px',
+                            class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
+      <!-- <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">-->
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About', about_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">About</a>-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Drycleaning</a>
+            <a class="dropdown-item" href="#">Laundry</a>
+            <a class="dropdown-item" href="#">Janitorial Services</a>
+            <a class="dropdown-item" href="#">Facility Management</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><button type="button" class="btn sbtn">Login</button></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="col-12">
+      <h4 style="text-align: center;">Need a facility inspection, special cleaning services<br> or just to say hi. Send us a message
+        and we will<br> get back to you soon</h4>
+    </div>
+  </div>
+  <p style="padding:1px;"></p>
+  <div class="bluecont1">
+    <div class="container" style="display: flex;
+        align-items: center;
+        justify-content: center;">
+      <div class="well">
+        <h3>Get in touch with us today!</h3><p style="padding:20px;"></p>
+        <a href="#"><button type="button" class="btn btn-lg cbtn">Contact us</button></a>
+      </div>
+    </div>
+  </div>
+
+</div>

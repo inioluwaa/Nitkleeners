@@ -1,6 +1,8 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-company-red">
+<nav class="navbar fixed-top navbar-inverse navbar-expand-lg bg-company-red">
   <a class="navbar-brand" href="#">
-    <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">
+    <%= link_to image_tag('/assets/G.png', height: '50px',
+                          class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
+   <!-- <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">-->
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -28,7 +30,8 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+        <!--<a class="nav-link" href="#">Contact</a>-->
       </li>
       <li class="nav-item">
         <a href="#"><button type="button" class="btn sbtn">Login</button></a>
