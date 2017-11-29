@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 4.0.0.beta2.1'
 
 gem 'jquery-rails'
 
+gem 'material_icons'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

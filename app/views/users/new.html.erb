@@ -3,7 +3,7 @@
 <div class="contactbody">
   <nav class="navbar fixed-top navbar-inverse navbar-expand-lg bg-company-white">
     <a class="navbar-brand" href="#">
-      <%= link_to image_tag('/assets/G.png', height: '50px',
+      <%= link_to image_tag('/assets/logodark.png', height: '49px', width: '138px',
                             class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
       <!-- <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">-->
     </a>
@@ -33,7 +33,8 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">Contact</a>-->
         </li>
         <li class="nav-item">
           <a href="#"><button type="button" class="btn sbtn1">Login</button></a>
@@ -42,6 +43,12 @@
     </div>
   </nav>
 </div>
-
-
-
+<p style="padding:30px;"></p>
+<div class="container">
+  <div class="col-12">
+    <i class="material-icons md-48 darkblue" style="display: inline-block;
+        width: 100%;">input</i>
+    <h3 style="text-align: center; color: #083944;">Sign up</h3>
+  </div>
+</div>
+<%= render 'layouts/getintouch' %>
