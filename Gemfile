@@ -10,8 +10,10 @@ end
 gem 'rails', '~> 5.1.4'
 
 gem 'bootstrap', '~> 4.0.0.beta2.1'
-
 gem 'jquery-rails'
+gem 'phonelib'
+
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'material_icons'
 
