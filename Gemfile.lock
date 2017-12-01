@@ -75,6 +75,7 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     erubi (1.7.0)
+    evil_icons (1.9.0)
     execjs (2.7.0)
     ffi (1.9.18-x64-mingw32)
     globalid (0.4.1)
@@ -192,6 +193,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  evil_icons
   jbuilder (~> 2.5)
   jquery-rails
   material_icons

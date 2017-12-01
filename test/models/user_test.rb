@@ -4,7 +4,7 @@ class UserTest < ActiveSupport::TestCase
   def setup
     @user = User.new(name: 'Example User', email: 'user@example.com',
                      password: 'foobar', password_confirmation: 'foobar',
-                     phonenumber: '12345678910')
+                     phone_number: '12345678910')
   end
 
   test 'should be valid' do
@@ -74,7 +74,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'phonenumber should be 11 digits' do
-    @user.phonenumber = 11
-    assert_not Phonelib.valid?(@user.phonenumber)
+    @user.phone_number = 11
+    assert_not Phonelib.valid?(@user.phone_number)
   end
 end

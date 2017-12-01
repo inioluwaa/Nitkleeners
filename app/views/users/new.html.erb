@@ -1,48 +1,46 @@
 <% provide(:title, 'Sign up') %>
 
-<div class="contactbody">
-  <nav class="navbar fixed-top navbar-inverse navbar-expand-lg bg-company-white">
-    <a class="navbar-brand" href="#">
-      <%= link_to image_tag('/assets/logodark.png', height: '49px', width: '138px',
+<nav class="navbar navbar-inverse navbar-expand-lg bg-company-white">
+  <a class="navbar-brand" href="#">
+    <%= link_to image_tag('/assets/logodark.png', height: '49px', width: '138px',
                             class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
       <!-- <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">-->
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <%= link_to 'Home', root_path, class: 'nav-link' %>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <%= link_to 'Home', root_path, class: 'nav-link' %>
           <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-        </li>
-        <li class="nav-item">
-          <%= link_to 'About', about_path, class: 'nav-link' %>
-          <!--<a class="nav-link" href="#">About</a>-->
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Services
+      </li>
+      <li class="nav-item">
+        <%= link_to 'About', about_path, class: 'nav-link' %>
+        <!--<a class="nav-link" href="#">About</a>-->
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Drycleaning</a>
-            <a class="dropdown-item" href="#">Laundry</a>
-            <a class="dropdown-item" href="#">Janitorial Services</a>
-            <a class="dropdown-item" href="#">Facility Management</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'Contact', contact_path, class: 'nav-link' %>
-          <!--<a class="nav-link" href="#">Contact</a>-->
-        </li>
-        <li class="nav-item">
-          <a href="#"><button type="button" class="btn sbtn1">Login</button></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Drycleaning</a>
+          <a class="dropdown-item" href="#">Laundry</a>
+          <a class="dropdown-item" href="#">Janitorial Services</a>
+          <a class="dropdown-item" href="#">Facility Management</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+        <!--<a class="nav-link" href="#">Contact</a>-->
+      </li>
+      <li class="nav-item">
+        <a href="#"><button type="button" class="btn sbtn1">Login</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <p style="padding:30px;"></p>
 <div class="container">
   <div class="col-12">
@@ -51,4 +49,33 @@
     <h3 style="text-align: center; color: #083944;">Sign up</h3>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label :name, 'Full Name' %>
+        <%= f.text_field :name, class: 'form-control' %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :phone_number, 'Phone No.' %>
+        <%= f.text_field :phone_number, class: 'form-control' %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+
+        <%= f.label :password_confirmation, 'Confirmation' %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+        <h6 style="text-align: center;">By creating an account, you agree to our Terms of use and that you
+        have read our privacy policy, Terms and Conditions and Cookie policy</h6>
+
+        <%= f.submit 'Create Account', class: 'btn btnsign' %>
+    <% end %>
+  </div>
+</div>
+
 <%= render 'layouts/getintouch' %>
