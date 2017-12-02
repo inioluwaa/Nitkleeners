@@ -11,6 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20_171_202_091_244) do
+
   create_table 'users', force: :cascade do |t|
     t.string 'name'
     t.string 'email'
@@ -21,4 +22,5 @@ ActiveRecord::Schema.define(version: 20_171_202_091_244) do
     t.index ['email'], name: 'index_users_on_email', unique: true
     t.index ['phone_number'], name: 'index_users_on_phone_number', unique: true
   end
+
 end
