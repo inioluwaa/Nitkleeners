@@ -13,6 +13,8 @@ gem 'evil_icons'
 gem 'jquery-rails'
 gem 'phonelib'
 
+gem 'rails-controller-testing'
+
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'material_icons'
