@@ -11,5 +11,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          phone_number: '080234455' } }
     end
     assert_template 'users/new'
+    assert_select 'div.field_with_errors'
+    assert_select 'form[action="/signup"]'
   end
 end
