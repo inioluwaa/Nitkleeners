@@ -111,8 +111,6 @@ nav li {
   font-weight: lighter;
 }
 
-
-
 .services {
   position: relative;
   text-align: center;
@@ -432,6 +430,6 @@ input {
 .field_with_errors {
   @extend .has-error !optional;
   .form-control {
-    color: green;
+    color: red;
   }
 }
