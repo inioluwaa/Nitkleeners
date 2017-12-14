@@ -8,35 +8,44 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <%= link_to 'Home', root_path, class: 'nav-link' %>
-        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-      </li>
-      <li class="nav-item">
-        <%= link_to 'About', about_path, class: 'nav-link' %>
-        <!--<a class="nav-link" href="#">About</a>-->
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Services
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Drycleaning</a>
-          <a class="dropdown-item" href="#">Laundry</a>
-          <a class="dropdown-item" href="#">Janitorial Services</a>
-          <a class="dropdown-item" href="#">Facility Management</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <%= link_to 'Contact', contact_path, class: 'nav-link' %>
-        <!--<a class="nav-link" href="#">Contact</a>-->
-      </li>
-      <li class="nav-item">
-        <%= link_to 'Login', login_path, class: 'btn sbtn' %>
-        <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
-      </li>
-    </ul>
-  </div>
+  <% if logged_in? %>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <i class="material-icons md-24 darkblue">account_circle</i>
+        <%= @user.name %>
+      </ul>
+    </div>
+  <% else %>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About', about_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">About</a>-->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Drycleaning</a>
+            <a class="dropdown-item" href="#">Laundry</a>
+            <a class="dropdown-item" href="#">Janitorial Services</a>
+            <a class="dropdown-item" href="#">Facility Management</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Contact', contact_path, class: 'nav-link' %>
+          <!--<a class="nav-link" href="#">Contact</a>-->
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Login', login_path, class: 'btn sbtn' %>
+          <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
+        </li>
+      </ul>
+    </div>
+  <% end %>
 </nav>
