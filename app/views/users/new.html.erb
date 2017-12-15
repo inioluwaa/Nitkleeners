@@ -56,20 +56,15 @@
     <%= form_for(@user, url: signup_path) do |f| %>
         <%= render 'shared/error_messages' %>
 
-        <%= f.label :name, 'Full Name' %>
-        <%= f.text_field :name, class: 'form-control' %>
+        <%= f.text_field :name, class: 'form-control', placeholder: 'Full Name', autofocus: true %>
 
-        <%= f.label :email %>
-        <%= f.email_field :email, class: 'form-control' %>
+        <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
 
-        <%= f.label :phone_number, 'Phone No.' %>
-        <%= f.text_field :phone_number, class: 'form-control' %>
+        <%= f.text_field :phone_number, class: 'form-control', placeholder: 'Phone Number' %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password, class: 'form-control' %>
+        <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
 
-        <%= f.label :password_confirmation, 'Confirmation' %>
-        <%= f.password_field :password_confirmation, class: 'form-control' %>
+        <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Confirm Password' %>
 
         <h6 style="text-align: center;">By creating an account, you agree to our Terms of use and that you
         have read our privacy policy, Terms and Conditions and Cookie policy</h6>

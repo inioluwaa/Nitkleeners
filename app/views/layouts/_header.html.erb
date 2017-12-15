@@ -14,6 +14,10 @@
         <i class="material-icons md-24 darkblue">account_circle</i>
         <%= @user.name %>
       </ul>
+      <li class="nav-item">
+        <%= link_to 'Logout', logout_path, class: 'btn sbtn' %>
+        <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
+      </li>
     </div>
   <% else %>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
