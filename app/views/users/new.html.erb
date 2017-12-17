@@ -6,7 +6,9 @@
                             class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
       <!-- <img src="/assets/G.png" height="50px" class="d-inline-block align-top" alt="">-->
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -21,7 +23,9 @@
         <!--<a class="nav-link" href="#">About</a>-->
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#"
+           id="navbarDropdown" role="button" data-toggle="dropdown"
+           aria-haspopup="true" aria-expanded="false">
           Services
           </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,7 +70,8 @@
 
         <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Confirm Password' %>
 
-        <h6 style="text-align: center;">By creating an account, you agree to our Terms of use and that you
+        <h6 style="text-align: center; color: #083944;">By creating an account,
+          you agree to our Terms of use and that you
         have read our privacy policy, Terms and Conditions and Cookie policy</h6>
 
         <%= f.submit 'Create Account', class: 'btn btnsign' %>
