@@ -8,18 +8,6 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <% if logged_in? %>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <i class="material-icons md-24 darkblue">account_circle</i>
-        <%#= @user.name %>
-      </ul>
-      <li class="nav-item">
-        <%= link_to 'Log out', logout_path, method: 'delete', class: 'btn sbtn' %>
-        <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
-      </li>
-    </div>
-  <% else %>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -45,11 +33,24 @@
           <%= link_to 'Contact', contact_path, class: 'nav-link' %>
           <!--<a class="nav-link" href="#">Contact</a>-->
         </li>
-        <li class="nav-item">
-          <%= link_to 'Login', login_path, class: 'btn sbtn' %>
-          <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
-        </li>
+
+        <% if logged_in? %>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <i class="material-icons md-24 darkblue">account_circle</i>
+              <%#= @user.name %>
+            </ul>
+            <li class="nav-item">
+              <%= link_to 'Log out', logout_path, method: 'delete', class: 'btn sbtn' %>
+              <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
+            </li>
+          </div>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to 'Login', login_path, class: 'btn sbtn' %>
+            <!--<a href="#"><button type="button" class="btn sbtn">Login</button></a>-->
+          </li>
+        <% end %>
       </ul>
     </div>
-  <% end %>
 </nav>
