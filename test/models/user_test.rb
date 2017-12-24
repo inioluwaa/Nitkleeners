@@ -77,4 +77,8 @@ class UserTest < ActiveSupport::TestCase
     @user.phone_number = 11
     assert_not Phonelib.valid?(@user.phone_number)
   end
+
+  test('authenticated? should return false for a use with nil digest') do
+    assert_not @user.authenticated?('')
+  end
 end
