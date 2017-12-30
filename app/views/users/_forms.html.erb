@@ -1,0 +1,17 @@
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
+
+  <%= f.text_field :name, class: 'form-control', placeholder: 'Full name', autofocus: true %>
+
+  <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+
+  <%= f.text_field :phone_number, class: 'form-control', placeholder: 'Phone Number' %>
+
+  <%= f.password_field :password, class: 'form-control', placeholder: 'Password' %>
+
+  <%= f.password_field :password_confirmation, class: 'form-control',
+                       placeholder: 'Confirm password' %>
+
+
+  <%= f.submit 'Save changes', class: 'btn sbtn1' %>
+<% end %>
