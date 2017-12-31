@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-inverse navbar-expand-lg bg-company-red">
   <a class="navbar-brand" href="#">
-    <%= link_to image_tag('/assets/G.png', height: '50px',
+    <%= link_to image_tag('/assets/G.png',height: '49px', width: '138px',
                           class: 'd-inline-block align-top', alt: 'Nitkleeners',), root_path %>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,16 +15,8 @@
         <li class="nav-item">
           <%= link_to 'About', about_path, class: 'nav-link' %>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Services
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Drycleaning</a>
-            <a class="dropdown-item" href="#">Laundry</a>
-            <a class="dropdown-item" href="#">Janitorial Services</a>
-            <a class="dropdown-item" href="#">Facility Management</a>
-          </div>
+        <li class="nav-item">
+          <%= link_to 'Services', services_path, class: 'nav-link' %>
         </li>
         <li class="nav-item">
           <%= link_to 'Contact', contact_path, class: 'nav-link' %>

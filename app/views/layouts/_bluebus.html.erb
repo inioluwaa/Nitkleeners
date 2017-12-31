@@ -14,10 +14,12 @@
     justify-content: center;">
   <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group mr-2 btn-square" role="group" aria-label="First group">
-      <a href="#"><button type="button" class="btn lbtn">Learn more</button></a>
+      <%= link_to 'Learn more', about_path, class: 'btn lbtn' %>
+      <!--<a href="#"><button type="button" class="btn lbtn">Learn more</button></a>-->
     </div>
     <div class="btn-group mr-2 btn-square" role="group" aria-label="Second group">
-      <a href="#"><button type="button" class="btn lbtn">Start here</button></a>
+      <%= link_to 'Start here', login_path, class: 'btn lbtn' %>
+      <!--<a href="#"><button type="button" class="btn lbtn">Start here</button></a>-->
     </div>
   </div>
 </div>
