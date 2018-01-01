@@ -12,6 +12,8 @@ gem 'jquery-rails'
 gem 'phonelib'
 gem 'rails', '~> 5.1.4'
 gem 'faker',          '1.7.3'
+gem 'will_paginate',           '3.1.6'
+gem 'bootstrap-will_paginate'
 gem 'rails-controller-testing'
 
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', require: 'bcrypt'

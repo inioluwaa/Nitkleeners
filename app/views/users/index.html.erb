@@ -3,6 +3,8 @@
 <%= render 'users/whiteheader' %>
 <h3 style="color: #083944; text-align: center;">All users</h3>
 
+<%= will_paginate(@users, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
+
 <ul class="users">
   <% @users.each do |user| %>
     <li>
@@ -10,3 +12,5 @@
     </li>
   <% end %>
 </ul>
+
+<%= will_paginate(@users, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
