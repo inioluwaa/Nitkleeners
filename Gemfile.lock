@@ -77,6 +77,8 @@ GEM
     erubi (1.7.0)
     evil_icons (1.9.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     ffi (1.9.18-x64-mingw32)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
@@ -199,6 +201,7 @@ DEPENDENCIES
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   evil_icons
+  faker (= 1.7.3)
   jbuilder (~> 2.5)
   jquery-rails
   material_icons

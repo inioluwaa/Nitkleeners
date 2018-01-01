@@ -11,15 +11,12 @@ gem 'evil_icons'
 gem 'jquery-rails'
 gem 'phonelib'
 gem 'rails', '~> 5.1.4'
-
+gem 'faker',          '1.7.3'
 gem 'rails-controller-testing'
 
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', require: 'bcrypt'
 
 gem 'material_icons'
-
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
