@@ -1,11 +1,14 @@
-<h1>Nitkleeners</h1>
+<%= image_tag('/assets/logodark.png', height: '49px', width: '138px',
+                      class: 'd-inline-block align-top', alt: 'Nitkleeners',) %>
+<div style="color: #083944;">
 
-<p>Hi <%= @user.email %>>,</p>
+  <p>Hi <%= @user.name %>,</p>
 
-<p>
-  Welcome to the Nitkleeners! You are only a click away from relieving yourself of the stress
-  click on the link below to activate your account:
-</p>
+  <p>
+    Welcome to the Nitkleeners! You are only a click away from relieving yourself of the stress
+    <br>Click on the link below to activate your account:
+  </p>
 
-<%= link_to 'Activate',
-            edit_account_activation_url(@user.activation_token, email: @user.email) %>
+  <%= link_to 'Activate your account',
+              edit_account_activation_url(@user.activation_token, email: @user.email) %>
+</div>
