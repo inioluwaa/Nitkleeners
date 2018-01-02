@@ -1,0 +1,11 @@
+<h1>Nitkleeners</h1>
+
+<p>Hi <%= @user.email %>>,</p>
+
+<p>
+  Welcome to the Nitkleeners! You are only a click away from relieving yourself of the stress
+  click on the link below to activate your account:
+</p>
+
+<%= link_to 'Activate',
+            edit_account_activation_url(@user.activation_token, email: @user.email) %>
