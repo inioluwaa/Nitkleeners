@@ -12,3 +12,16 @@ blossom:
   email: ini@example.gov
   phone_number: 08171234567
   password_digest: <%= User.digest('password') %>
+
+
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  phone_number: 08171234568
+  password_digest: <%= User.digest('password') %>
+
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  phone_number: 08171234569
+  password_digest: <%= User.digest('password') %>
