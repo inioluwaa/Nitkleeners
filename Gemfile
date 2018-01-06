@@ -7,13 +7,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
-gem 'evil_icons'
+gem 'toastr-rails'
 gem 'jquery-rails'
 gem 'phonelib'
-gem 'toastr-rails'
 gem 'rails', '~> 5.1.4'
-gem 'faker',          '1.7.3'
-gem 'will_paginate',           '3.1.6'
+gem 'faker', '1.7.3'
+gem 'will_paginate', '3.1.6'
 gem 'bootstrap-will_paginate'
 gem 'rails-controller-testing'
 
