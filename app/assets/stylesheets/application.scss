@@ -88,7 +88,7 @@ nav li {
   height: 300px;
   display: block;
   background-size: cover;
-  background-image: url('dry-cleaning-suits-slide.png');
+  background-image: image-url("dry-cleaning-suits-slide.png")
 }
 
 .jumboimage1 {
@@ -96,7 +96,7 @@ nav li {
   height: 300px;
   display: block;
   background-size: cover;
-  background-image: url('Iss.png');
+  background-image: image-url('Iss.png');
 }
 
 .jumbotext {
