@@ -5,6 +5,7 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/.env" />
       <change beforePath="" afterPath="$PROJECT_DIR$/Procfile" />
       <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/aws.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/npm-debug.log" />
       <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/Nk-bloss.iml" afterPath="$PROJECT_DIR$/.idea/Nk-bloss.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -545,12 +546,12 @@
       <workItem from="1515207700224" duration="11953000" />
       <workItem from="1515242239107" duration="788000" />
       <workItem from="1515246459469" duration="4838000" />
-      <workItem from="1515256200917" duration="2471000" />
+      <workItem from="1515256200917" duration="2644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332179000" />
+    <option name="totallyTimeSpent" value="332352000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
