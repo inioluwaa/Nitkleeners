@@ -7,6 +7,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'evil_icons'
 gem 'toastr-rails'
 gem 'jquery-rails'
 gem 'phonelib'
