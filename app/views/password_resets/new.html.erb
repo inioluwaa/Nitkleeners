@@ -1,0 +1,17 @@
+<% provide(:title, 'Forgot password') %>
+
+<%= render 'users/whiteheader' %>
+
+<h3 style="text-align: center; color: #083944;">Forgot password</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 offset-md-4">
+      <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+        <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+        <%= f.submit 'Submit', class: 'btn sbtn1' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+<p style="padding: 10px;"></p>
+<%= render 'layouts/getintouch' %>

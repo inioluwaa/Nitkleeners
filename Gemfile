@@ -12,7 +12,7 @@ gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'evil_icons'
 gem 'toastr-rails'
 gem 'jquery-rails'
-gem "paperclip", "~> 5.0.0"
+gem 'paperclip', '~> 5.0.0'
 gem 'phonelib'
 gem 'aws-sdk', '~> 2'
 gem 'rails', '~> 5.1.4'

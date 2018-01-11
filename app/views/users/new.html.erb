@@ -9,9 +9,10 @@
     <h3 style="text-align: center; color: #083944;">Sign up</h3>
   </div>
 </div>
-<div class="row">
-  <div class="col-12 col-md-4 offset-md-4">
-    <%= form_for(@user, url: signup_path) do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 offset-md-4">
+      <%= form_for(@user, url: signup_path) do |f| %>
         <%= render 'shared/error_messages' %>
 
         <%= f.text_field :name, class: 'form-control', placeholder: 'Full Name', autofocus: true %>
@@ -25,15 +26,17 @@
         <%= f.password_field :password_confirmation, class: 'form-control',
                              placeholder: 'Confirm Password' %>
 
-      <h6 style="text-align: center; color: #083944;">By creating an account,
-        you agree to our Terms of use and that you
-        have read our privacy policy, Terms and Conditions and Cookie policy</h6>
+        <h6 style="text-align: center; color: #083944;">By creating an account,
+          you agree to our Terms of use and that you
+          have read our privacy policy, Terms and Conditions and Cookie policy</h6>
 
         <%= f.submit 'Create Account', class: 'btn sbtn1' %>
-      <p style="color: #083944;">
-        Have an account? <%= link_to 'Log in', login_path, class: 'btn sbtn1' %></p>
-    <% end %>
+        <p style="color: #083944;">
+          Have an account? <%= link_to 'Log in', login_path, class: 'btn sbtn1' %></p>
+      <% end %>
+    </div>
   </div>
 </div>
+
 
 <%= render 'layouts/getintouch' %>
