@@ -1,0 +1,16 @@
+<% provide(:title, 'Add new product') %>
+
+<%= render 'users/whiteheader' %>
+
+<h3 style="text-align: center; color: #083944;">New product</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-4 offset-md-4">
+      <%= render 'form', product: @product %>
+      <%= link_to 'Back', products_path, class: 'fpassbut' %>
+    </div>
+  </div>
+</div>
+
+<p style="padding: 10px;"></p>
