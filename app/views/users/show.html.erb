@@ -3,16 +3,18 @@
 <%= render 'users/whiteheader' %>
 
 <h3 style="text-align: center; color: #083944;">Choose your items</h3>
+<p style="padding: 10px;"></p>
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card"> <!--style="width: 18rem;"-->
         <% @products.each do |product| %>
           <%= image_tag(product.image_url, class: 'card-img-top',  alt: product.title) %>
           <div class="card-body">
             <h5 class="card-title"><%= product.title %></h5>
             <p class="card-text"><%= sanitize(product.description) %></p>
-            <p class="card-text"><small class="text-muted"><%= product.price %></small></p>
+            <p class="card-text"><small class="text-muted">
+              <%= number_to_currency(product.price, unit: "₦") %></small></p>
           </div>
         <% end %>
       </div>
