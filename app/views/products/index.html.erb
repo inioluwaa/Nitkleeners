@@ -4,13 +4,11 @@
 
 <h3 style="text-align: center; color: #083944;">Products</h3>
 
-
-
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="card" style="width: 18rem;">
-        <% @products.each do |product| %>
+    <% @products.each do |product| %>
+      <div class="col-12 col-md-3"  style="margin-bottom: 20px;">
+        <div class="card"  style="height: 30rem;">
           <%= image_tag(product.image_url, class: 'card-img-top',  alt: product.title) %>
           <div class="card-body">
             <h5 class="card-title"><%= product.title %></h5>
@@ -20,12 +18,12 @@
             <p><%= link_to 'Edit', edit_product_path(product) %></p>
             <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
           </div>
-        <% end %>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
   <p style="padding: 10px;"></p>
   <%= link_to 'New Product', new_product_path, class: 'btn sbtn1' %>
   <p style="padding: 10px;"></p>
-
 </div>
+
