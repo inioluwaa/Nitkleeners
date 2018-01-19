@@ -3,7 +3,7 @@
 <h3 style="text-align: center; color: #083944;">Your Cart</h3>
 <ul>
   <% @cart.line_items.each do |item| %>
-    <li><%= item.product.title %></li>
+    <li><%= item.quantity %> &times; <%= item.product.title %></li>
   <% end %>
 </ul>
 
