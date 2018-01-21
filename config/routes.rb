@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
-
   resources :line_items
   resources :carts
   resources :products
@@ -20,6 +19,8 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
+
+  get '/store', to: 'store#index'
 
   resources :users
   resources :account_activations, only: [:edit]

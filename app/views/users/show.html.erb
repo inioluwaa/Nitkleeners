@@ -2,27 +2,5 @@
 
 <%= render 'users/whiteheader' %>
 
-<h3 style="text-align: center; color: #083944;">Choose your items</h3>
-<p style="padding: 10px;"></p>
-<div class="container">
-  <div class="row">
-    <% @products.each do |product| %>
-      <div class="col-12 col-md-3" style="margin-bottom: 20px;">
-        <div class="card" style="height: 25rem;"> <!--style="width: 18rem;"-->
-          <%= image_tag(product.image_url, class: 'card-img-top',  alt: product.title) %>
-          <div class="card-body">
-            <h5 class="card-title"><%= product.title %></h5>
-            <p class="card-text"><%= sanitize(product.description) %></p>
-            <p class="card-text"><small class="text-muted">
-              <%= number_to_currency(product.price, unit: "₦") %></small></p>
-            <%= button_to 'Add to Cart', line_items_path(product_id: product),  class: 'btn sbtn1' %>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
 
-
-<p style="padding: 10px;"></p>
 
