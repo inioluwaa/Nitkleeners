@@ -2,11 +2,20 @@
 
 <div class="container">
   <h3 style="text-align: center; color: #083944;">Your Cart</h3>
-  <ul>
+  <table>
     <% @cart.line_items.each do |item| %>
-      <li><%= item.quantity %> &times; <%= item.product.title %></li>
+      <tr>
+      <td><%= item.quantity %>&times;</td>
+      <td><%= item.product.title %></td>
+      <td class="item_price"><%=
+        number_to_currency(item.total_price, unit: "₦") %></td>
+     </tr>
     <% end %>
-  </ul>
+      <tr class="total_line">
+      <td colspan="2">Total</td>
+      <td class="total_cell"><%= number_to_currency(@cart.total_price, unit: "₦") %></td>
+    </tr>
+  </table>
   <%= link_to 'Empty cart', @cart,
               method: :delete, data: { confirm: 'Are you sure?' },  class: 'btn sbtn1' %>
 </div>
