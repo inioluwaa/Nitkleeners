@@ -1,13 +1,9 @@
 class StaticPagesController < ApplicationController
-  def home
-  end
+  def home; end
 
-  def about
-  end
+  def about; end
 
-  def services
-  end
+  def services; end
 
-  def contact
-  end
+  def contact; end
 end
