@@ -2,22 +2,31 @@
 
 <div class="container">
   <h3 style="text-align: center; color: #083944;">Your Cart</h3>
-  <table>
+  <p style="padding: 10px;"></p>
     <% @cart.line_items.each do |item| %>
-      <tr>
-        <td><%= item.quantity %> &times;</td>
-        <td><%= item.product.title %></td>
-        <td class="item_price"><%=
-          number_to_currency(item.total_price, unit: "₦") %></td>
-     </tr>
+      <div class="row">
+        <div class="col-sm-3">
+          <%= item.quantity %> &times;
+        </div>
+
+        <div class="col-sm-6">
+          <%= item.product.title %>
+        </div>
+
+        <div class="col-sm-3 item_price">
+          <%=
+            number_to_currency(item.total_price, unit: "₦") %>
+        </div>
+      </div>
     <% end %>
-      <tr class="total_line">
-        <td colspan="2">Total</td>
-        <td class="total_cell"><%= number_to_currency(@cart.total_price, unit: "₦") %></td>
-      </tr>
-  </table>
+  <p style="padding: 10px;"></p>
+  <div class="row">
+    <div class="col-sm-9">Total</div>
+    <div class="col-sm-3 total_cell"><%= number_to_currency(@cart.total_price, unit: "₦") %></div>
+  </div>
+  <p style="padding: 10px;"></p>
   <%= link_to 'Empty cart', @cart,
-              method: :delete, data: { confirm: 'Are you sure?' },  class: 'btn sbtn1' %>
+              method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn sbtn1' %></div>
 </div>
 <p style="padding: 10px;"></p>
 
