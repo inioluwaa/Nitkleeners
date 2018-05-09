@@ -9,7 +9,7 @@
           <%= item.quantity %> &times;
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-3">
           <%= item.product.title %>
         </div>
 
@@ -17,16 +17,23 @@
           <%=
             number_to_currency(item.total_price, unit: "₦") %>
         </div>
+
+        <div class="col-sm-3">
+          <%= link_to 'Remove Item', @line_item, method: :delete, data: { confirm: 'Are you sure? ' },
+          class: 'btn btn-sm btn-danger'%>
+        </div>
       </div>
     <% end %>
   <p style="padding: 10px;"></p>
   <div class="row">
-    <div class="col-sm-9">Total</div>
-    <div class="col-sm-3 total_cell"><%= number_to_currency(@cart.total_price, unit: "₦") %></div>
+    <div class="col-sm-6"><strong>Total</strong></div>
+    <div class="col-sm-3 total_cell">
+      <strong><%= number_to_currency(@cart.total_price, unit: "₦") %></strong></div>
+    <div class="col-sm-3"><%= link_to '<strong>Empty cart</strong>'.html_safe, @cart,
+                                      method: :delete, data: {confirm: 'Are you sure?'},
+                                      class: 'btn btn-sm btn-danger' %></div></div>
   </div>
   <p style="padding: 10px;"></p>
-  <%= link_to 'Empty cart', @cart,
-              method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn sbtn1' %></div>
 </div>
 <p style="padding: 10px;"></p>
 

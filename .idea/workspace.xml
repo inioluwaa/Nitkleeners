@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21af81ba-2ca7-4117-a04c-b0804117a97a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/charges_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/charges_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/carts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/carts/show.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#268#275#0#HTML" expanded="true" />
                 <element signature="e#558#580#0#HTML" expanded="true" />
@@ -483,12 +481,12 @@
       <workItem from="1525033246476" duration="900000" />
       <workItem from="1525384204311" duration="929000" />
       <workItem from="1525550236266" duration="27000" />
-      <workItem from="1525849728228" duration="4846000" />
+      <workItem from="1525849728228" duration="6114000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="476870000" />
+    <option name="totallyTimeSpent" value="478138000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,19 +498,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="752" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49191687" visible="true" weight="0.35779122" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32868218" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="0" sideWeight="0.54236007" side_tool="true" visible="true" weight="0.31782946" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.54236007" side_tool="true" weight="0.31782946" />
       <window_info anchor="right" id="Database" order="0" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32868218" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49546143" weight="0.32868218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.45763993" visible="true" weight="0.31782946" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.45763993" visible="true" weight="0.31782946" />
       <window_info id="Favorites" order="0" sideWeight="0.50808316" side_tool="true" weight="0.24659607" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -886,7 +884,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding>
             <element signature="e#268#275#0#HTML" expanded="true" />
             <element signature="e#558#580#0#HTML" expanded="true" />
