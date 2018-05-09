@@ -1,6 +1,8 @@
 <%= render 'users/whiteheader' %>
 
 <div class="container">
+  <i class="material-icons md-48 darkblue" style="display: inline-block;
+      width: 100%;">add_shopping_cart</i>
   <h3 style="text-align: center; color: #083944;">Your Cart</h3>
   <p style="padding: 10px;"></p>
     <% @cart.line_items.each do |item| %>
@@ -19,7 +21,7 @@
         </div>
 
         <div class="col-sm-3">
-          <%= link_to 'Remove Item', @line_item, method: :delete, data: { confirm: 'Are you sure? ' },
+          <%= link_to 'Remove item', @line_item, method: :delete, data: { confirm: 'Are you sure? ' },
           class: 'btn btn-sm btn-danger'%>
         </div>
         <p style="padding: 2px;"></p>
