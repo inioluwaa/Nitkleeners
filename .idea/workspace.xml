@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21af81ba-2ca7-4117-a04c-b0804117a97a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/carts/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/carts/show.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,22 +33,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/line_items/_form.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="_whiteheader.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_whiteheader.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="76" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="296">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#268#275#0#HTML" expanded="true" />
+                <element signature="e#730#752#0#HTML" expanded="true" />
                 <element signature="e#558#580#0#HTML" expanded="true" />
                 <element signature="e#755#777#0#HTML" expanded="true" />
                 <element signature="e#730#752#0#HTML" expanded="true" />
@@ -117,7 +123,6 @@
         <option value="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/line_item.rb" />
         <option value="$PROJECT_DIR$/app/models/cart.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -125,6 +130,7 @@
         <option value="$PROJECT_DIR$/app/views/charges/new.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/charges_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/carts/show.html.erb" />
       </list>
     </option>
@@ -280,7 +286,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
-    <property name="SearchEverywhereHistoryKey" value="quantit&#9;null&#9;null&#10;cart.rb&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/models/cart.rb&#10;rout&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/config/routes.rb&#10;rou&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/config/routes.rb&#10;lib&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/lib&#10;account&#9;null&#9;null&#10;show&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/views/users/show.html.erb&#10;destroy&#9;null&#9;null&#10;dark&#9;null&#9;null&#10;admin&#9;null&#9;null&#10;store&#9;null&#9;null&#10;bustext&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="appl&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/assets/stylesheets/application.scss&#10;sbt&#9;null&#9;null&#10;white&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/views/users/_whiteheader.html.erb&#10;quantit&#9;null&#9;null&#10;cart.rb&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/models/cart.rb&#10;rout&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/config/routes.rb&#10;rou&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/config/routes.rb&#10;lib&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/lib&#10;account&#9;null&#9;null&#10;show&#9;FILE&#9;file://C:/Users/Inioluwa/RubymineProjects/Nk-bloss/app/views/users/show.html.erb&#10;destroy&#9;null&#9;null&#10;dark&#9;null&#9;null&#10;admin&#9;null&#9;null&#10;store&#9;null&#9;null&#10;bustext&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value=".png" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -481,12 +487,12 @@
       <workItem from="1525033246476" duration="900000" />
       <workItem from="1525384204311" duration="929000" />
       <workItem from="1525550236266" duration="27000" />
-      <workItem from="1525849728228" duration="6114000" />
+      <workItem from="1525849728228" duration="6688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="478138000" />
+    <option name="totallyTimeSpent" value="478712000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,7 +504,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="752" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49191687" visible="true" weight="0.35779122" />
@@ -681,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_whiteheader.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="76" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -779,13 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6592">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -842,9 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/line_items/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -871,9 +860,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/carts/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180119175844_add_quantity_to_line_items.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -881,12 +867,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/line_items/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/carts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_whiteheader.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="236" column="1" selection-start-line="236" selection-start-column="1" selection-end-line="236" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state relative-caret-position="296">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="e#268#275#0#HTML" expanded="true" />
+            <element signature="e#730#752#0#HTML" expanded="true" />
             <element signature="e#558#580#0#HTML" expanded="true" />
             <element signature="e#755#777#0#HTML" expanded="true" />
             <element signature="e#730#752#0#HTML" expanded="true" />

@@ -22,6 +22,7 @@
           <%= link_to 'Remove Item', @line_item, method: :delete, data: { confirm: 'Are you sure? ' },
           class: 'btn btn-sm btn-danger'%>
         </div>
+        <p style="padding: 2px;"></p>
       </div>
     <% end %>
   <p style="padding: 10px;"></p>
@@ -34,6 +35,9 @@
                                       class: 'btn btn-sm btn-danger' %></div></div>
   </div>
   <p style="padding: 10px;"></p>
+  <div class="container">
+    <%= link_to 'Continue shopping', store_path, class: 'btn btn-sm sbtn1' %>
+  </div>
 </div>
 <p style="padding: 10px;"></p>
 
