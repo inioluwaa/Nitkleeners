@@ -15,7 +15,7 @@ class ChargesController < ApplicationController
       customer: customer.id,
       amount: @amount,
       description: 'Nitkleeners Customer',
-      currency: 'usd'
+      currency: 'ngn'
     )
 
   rescue Stripe::CardError => e

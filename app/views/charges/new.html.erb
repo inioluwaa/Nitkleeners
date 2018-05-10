@@ -6,13 +6,14 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>@cart.total_price</span>
+      <span><%= @cart.total_price %></span>
     </label>
   </article>
 
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="<%= @cart.total_price %>"
+          data-description="Laundry Payment"
+          data-amount="<%= (@cart.total_price * 100).to_i %>"
+          data-currency="NGN"
           data-locale="auto"></script>
 <% end %>
