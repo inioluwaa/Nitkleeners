@@ -1,4 +1,5 @@
 <%= form_tag charges_path do %>
+  <%= render 'users/whiteheader' %>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
