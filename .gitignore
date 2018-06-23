@@ -23,7 +23,4 @@
 .byebug_history
 
 # Ignore .env file
-/.env
-
-# Ignore aws.rb file
-/config/aws.rb
+.env
