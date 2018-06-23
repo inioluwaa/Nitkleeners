@@ -178,7 +178,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="27" />
     <option name="y" value="132" />
     <option name="width" value="1346" />
@@ -239,13 +239,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="charges" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Nk-bloss" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Nk-bloss" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="contact_mailer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Nk-bloss" type="b2602c69:ProjectViewProjectNode" />
@@ -549,12 +542,12 @@
       <workItem from="1529613263922" duration="508000" />
       <workItem from="1529613969912" duration="2182000" />
       <workItem from="1529739524143" duration="597000" />
-      <workItem from="1529758893866" duration="6613000" />
+      <workItem from="1529758893866" duration="7601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="528629000" />
+    <option name="totallyTimeSpent" value="529617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -566,7 +559,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="752" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49191687" visible="true" weight="0.4311649" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32868218" />

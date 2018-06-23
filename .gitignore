@@ -24,3 +24,6 @@
 
 # Ignore .env file
 /.env
+
+# Ignore aws.rb file
+/aws.rb
