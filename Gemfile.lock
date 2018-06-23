@@ -264,7 +264,7 @@ DEPENDENCIES
   jquery-rails
   material_icons
   paperclip (~> 5.0.0)
-  pg (= 0.18.4)
+  pg
   phonelib
   puma (~> 3.7)
   rails (~> 5.1.4)

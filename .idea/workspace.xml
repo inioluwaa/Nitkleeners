@@ -180,7 +180,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="27" />
     <option name="y" value="132" />
     <option name="width" value="1346" />
@@ -551,12 +551,12 @@
       <workItem from="1529613263922" duration="508000" />
       <workItem from="1529613969912" duration="2182000" />
       <workItem from="1529739524143" duration="597000" />
-      <workItem from="1529758893866" duration="4589000" />
+      <workItem from="1529758893866" duration="5976000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526605000" />
+    <option name="totallyTimeSpent" value="527992000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,7 +568,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="752" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49191687" visible="true" weight="0.4311649" />
       <window_info anchor="bottom" id="TODO" order="9" weight="0.32868218" />
