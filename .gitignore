@@ -26,4 +26,4 @@
 /.env
 
 # Ignore aws.rb file
-/aws.rb
+/config/aws.rb
